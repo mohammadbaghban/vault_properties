@@ -28,6 +28,5 @@ with open(application_properties_address, "r+") as application_properties:
             pattern = fr"({re.escape(property_name)}=).*"
             file_str = re.sub(pattern, fr"\g<1>{new_value}", file_str)
 
-    # print(file_str)
     with open("application.properties", "w+") as file2:
         file2.write(file_str)
