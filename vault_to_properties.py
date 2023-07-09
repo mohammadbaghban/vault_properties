@@ -6,9 +6,8 @@ import sys
 url = sys.argv[1]
 application_properties_address = sys.argv[2]
 vault_token = sys.argv[3]
-vault_version = sys.argv[4]
 
-querystring = {"version": vault_version}
+querystring = {}
 payload = ""
 headers = {"X-Vault-Token": vault_token}
 
